@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container-1">
+
+            <span class="word">Welcome Back</span>
+            <span class=" details">Please Enter Your Details</span>
+            <input type="text" id="name" placeholder="User Name">
+            <input type="text" id="email" placeholder="Enter Email ">
+            <input type="text" id="password" placeholder="Enter Password">
+            
+            <div class="box">
+                <span onclick="login()" class="login">Login</span>
+                <span class="forgot">
+                    <span><a href="index-2.html">Forgot Password ?</a></span>
+                </span>
+            </div>
+            <span>Don't Have A Account ? 
+                <span class="Register"><a href="index-1.html">Register</a></span>
+            </span>
+        </div>
+
+    </div>
+
+    <script>
+       function login() {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password');
+
+            if (name === "" || email === "" || password === "") {
+                alert("enter the details");
+            }
+            else if (name === "bitopan" || email === "bitopan4@gmail.com" || password === "302010") {
+
+                alert("login successfull");
+                document.getElementById('name').value = "";
+                document.getElementById('email').value = "";
+                document.getElementById('password').value = "";
+            }
+            else {
+                alert("invalid details")
+                document.getElementById('name').value = "";
+                document.getElementById('email').value = "";
+                document.getElementById('password').value = "";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

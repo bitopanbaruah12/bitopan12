@@ -1,0 +1,189 @@
+* {
+    /* outline: 2px solid black; */
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    /* background: linear-gradient(to bottom, #000020, #132692); */
+    background-image: url("https://img.freepik.com/premium-photo/gradient-elegant-navy-abstract-3d-geometric-background-design_851755-308300.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: linear-gradient(to bottom, #010016, #0025fa);
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 0 50px 0;
+    align-items: center;
+    flex-direction: column;
+    min-height: 60vh;
+    min-width: 25vw;
+    gap: 15px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.container input {
+    box-shadow: 0 0 8px 2px rgba(255, 252, 252, 0.3);
+
+    padding: 0 0 0 10px;
+    min-width: 13vw;
+    min-height: 4vh;
+    border-radius: 5px;
+    opacity: 0.5;
+    background-color: #000730;
+    color: white;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 70px 0;
+    gap: 7px;
+}
+
+.login {
+    background-color: rgb(2, 2, 54);
+    color: white;
+    min-width: 13vw;
+    min-height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    padding: 3px 0 3px 0;
+}
+
+.login:hover {
+    background-color: white;
+    color: black;
+}
+
+input::placeholder {
+    opacity: 1;
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Register{
+    cursor: pointer;
+}
+.Register a{
+    text-decoration: none;
+    color: white;
+}
+.word {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.details {
+    padding: 0 0 70px 0;
+}
+
+@media only screen and (max-width:800px) {
+    .container {
+        background: linear-gradient(to bottom, #010016, #0025fa);
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0px 0 50px 0;
+        align-items: center;
+        flex-direction: column;
+        min-height: 50vh;
+        min-width: 70vw;
+        gap: 15px;
+        color: white;
+        font-size: 13px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .container-1 {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px 0 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .container input {
+        box-shadow: 0 0 8px 2px rgba(255, 252, 252, 0.3);
+
+        padding: 0 0 0 10px;
+        min-width: 13vw;
+        min-height: 4vh;
+        border-radius: 5px;
+        opacity: 0.5;
+        background-color: #000730;
+        color: white;
+        font-size: 17px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    .word{
+        font-size: 20px;
+
+    }
+
+    .details {
+        padding: 0 0 20px 0;
+    }
+
+    .login {
+        background-color: rgb(2, 2, 54);
+        color: white;
+        min-width: 40vw;
+        min-height: 3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        padding: 3px 10px 3px 10px;
+        cursor: pointer;
+    }
+
+    .forgot {
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+    }
+
+    .login:hover {
+        background-color: rgb(2, 2, 54);
+        color: white;
+    }
+
+}
